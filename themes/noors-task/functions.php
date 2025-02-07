@@ -176,3 +176,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+include_once( get_template_directory() . '/inc/ip-redirect.php' );
+add_action( 'init', 'noors_ip_based_redirect' );
